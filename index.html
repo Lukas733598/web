@@ -8,24 +8,12 @@
         body {
             text-align: center;
             padding: 50px;
-            background-color: lightcoral; /* Výchozí barva pozadí - červená */
         }
         button {
             margin: 10px;
             padding: 10px 20px;
             font-size: 16px;
             cursor: pointer;
-            border: 2px solid pink; /* Růžové ohraničení */
-            color: white;
-        }
-        .blue-button {
-            background-color: lightblue;
-        }
-        .green-button {
-            background-color: lightgreen;
-        }
-        .bi-button {
-            background-color: gray;
         }
     </style>
 </head>
@@ -33,12 +21,12 @@
 
     <h1>Ovládání webové stránky</h1>
 
-    <button class="blue-button" onclick="changeColor('lightblue')">Modrá</button>
-    <button class="green-button" onclick="changeColor('lightgreen')">Zelená</button>
+    <button onclick="changeColor('lightblue')">Modrá</button>
+    <button onclick="changeColor('lightgreen')">Zelená</button>
     
     <p>Kliknutím na tlačítko níže otevřete dashboard:</p>
     <a href="https://app.powerbi.com/view?r=eyJrIjoiMTYzNWJjZTUtNDM4NC00ZmFjLWFiNDgtMjQyZTkwZTNmMDQ1IiwidCI6ImM2M2NlNzI5LWNhMTctNGU1Mi1hYTJkLTk2Yjc5NDg5YTU0MiIsImMiOjh9" target="_blank">
-        <button class="bi-button">Otevřít Power BI report</button>
+        <button>Otevřít Power BI report</button>
     </a> 
 
     <script>
@@ -49,3 +37,4 @@
 
 </body>
 </html>
+
