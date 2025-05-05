@@ -1,39 +1,17 @@
 <!DOCTYPE html>
-<html lang="cs">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ovládání webové stránky</title>
-    <style>
-        body {
-            text-align: center;
-            padding: 50px;
-        }
-        button {
-            margin: 10px;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-    </style>
-</head>
-<body>
-
-    <h1>Ovládání webové stránky</h1>
-
-    <button onclick="changeColor('lightblue')">Modrá</button>
-    <button onclick="changeColor('lightgreen')">Zelená</button>
-    <button onclick="openReport()">Otevřít Power BI report</button>
-
-    <script>
-        function changeColor(color) {
-            document.body.style.backgroundColor = color;
-        }
-
-        function openReport() {
-            window.open("https://app.powerbi.com/view?r=eyJrIjoiMTYzNWJjZTUtNDM4NC00ZmFjLWFiNDgtMjQyZTkwZTNmMDQ1IiwidCI6ImM2M2NlNzI5LWNhMTctNGU1Mi1hYTJkLTk2Yjc5NDg5YTU0MiIsImMiOjh9", "_blank");
-        }
-    </script>
-
-</body>
-</html>
+  <html lang="cs">
+ 	 <head>
+ 		<meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Otevřít Power BI</title>
+  </head>
+  <body>
+ <h1>Otevřít Power BI Dashboard</h1>
+ <p>Kliknutím na tlačítko níže otevřete dashboard:</p>
+ <a href="https://app.powerbi.com/view?r=eyJrIjoiMTYzNWJjZTUtNDM4NC00ZmFjLWFiNDgtMjQyZTkwZTNmMDQ1IiwidCI6ImM2M2NlNzI5LWNhMTctNGU1Mi1hYTJkLTk2Yjc5NDg5YTU0MiIsImMiOjh9" target="_blank">
+ <button>Otevřít</button>
+ </a> 
+ <p>Kliknutím na tlačítko níže otevřete dashboard:</p>
+ <a href="https://app.powerbi.com/view?r=eyJrIjoiMTYzNWJjZTUtNDM4NC00ZmFjLWFiNDgtMjQyZTkwZTNmMDQ1IiwidCI6ImM2M2NlNzI5LWNhMTctNGU1Mi1hYTJkLTk2Yjc5NDg5YTU0MiIsImMiOjh9" target="_blank">
+ <button>Otevřít</button>
+ </body>
