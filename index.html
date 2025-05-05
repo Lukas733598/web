@@ -3,18 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Otevřít Power BI</title>
+    <title>GIF webová stránka</title>
     <style>
         body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             background-color: red;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .sidebar {
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 150px;
+            height: 100vh;
+            background-color: lightgray;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .sidebar button {
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
         }
     </style>
 </head>
 <body>
-    <h1>Otevřít Power BI Dashboard</h1>
+    <h1>GIF webová stránka</h1>
     <p>Kliknutím na tlačítko níže otevřete dashboard:</p>
     <a href="https://app.powerbi.com/view?r=eyJrIjoiMTYzNWJjZTUtNDM4NC00ZmFjLWFiNDgtMjQyZTkwZTNmMDQ1IiwidCI6ImM2M2NlNzI5LWNhMTctNGU1Mi1hYTJkLTk2Yjc5NDg5YTU0MiIsImMiOjh9" target="_blank">
         <button>Otevřít</button>
     </a>
+
+    <div class="sidebar">
+        <button onclick="changeColor('red')" style="background-color: red;">Červená</button>
+        <button onclick="changeColor('blue')" style="background-color: blue; color: white;">Modrá</button>
+        <button onclick="changeColor('green')" style="background-color: green;">Zelená</button>
+        <button onclick="changeColor('yellow')" style="background-color: yellow;">Žlutá</button>
+        <button onclick="changeColor('purple')" style="background-color: purple; color: white;">Fialová</button>
+    </div>
+
+    <script>
+        function changeColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+    </script>
 </body>
 </html>
+
+    
